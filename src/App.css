@@ -1,0 +1,103 @@
+:root {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 0.25s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #0070C9aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: right;
+  position: relative;
+  left: 350px;
+  transition: border-color 0.25s;
+}
+.App button:hover {
+  border-color: #0070C9;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1rem;
+  width: 400px;
+  box-shadow: 4px 2px 4px 2px #ccc;
+  border-radius: 15px;
+}
+
+.card button i {
+  font-size: 25px;
+}
+
+.card h3 {
+  text-align: right;
+}
+
+.card p i {
+  position: relative;
+  margin-right: 8px;
+  font-size: 60px;
+  top: 7px;
+}
+
+@media (max-width: 768px) {
+  .App button {
+    left: auto;
+    right: 1rem;
+  }
+  .card {
+    width: auto;
+  }
+}
